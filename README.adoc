@@ -2,7 +2,7 @@
 
 == The road to a basic Wordle
 
-=== 1. HTML Structure
+=== 1. HTML skeleton
 
 === 2. More HTML elements
 
