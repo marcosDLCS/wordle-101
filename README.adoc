@@ -1,0 +1,11 @@
+= wordle-101
+
+== The road to a basic Wordle
+
+=== 1. HTML Structure
+
+=== 2. More HTML elements
+
+=== 3. Apply basic CSS styles
+
+=== 4. Starting with Javascript
