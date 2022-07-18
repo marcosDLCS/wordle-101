@@ -1,19 +1,25 @@
-/* Basic styles to show the structure */
+/* Styles */
+/* -------------------------------------------------------------------------------- */
 
-header, main, footer {
-    border: 5px solid tomato;
-    margin: 10px;
+header,
+main,
+footer {
+  border: 5px solid tomato;
+  margin: 10px;
 }
 
 p {
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
 }
 
-#how-to-play, #board, #player-actions, #summary {
-    border: 3px black dashed;
-    margin: 15px;
-    min-height: 150px;
+#how-to-play,
+#board,
+#player-actions,
+#summary {
+  border: 3px black dashed;
+  margin: 15px;
+  min-height: 150px;
 }
