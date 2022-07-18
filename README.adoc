@@ -1,8 +1,13 @@
 = wordle-101
+:toc: auto
+
+Wordle is a web-based word game created and developed by Welsh software engineer Josh Wardle, and owned and published by The New York Times Company since 2022. 
+
+Players have six attempts to guess a five-letter word, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position.
 
 == The road to a basic Wordle
 
-=== 1. HTML skeleton
+=== ☠️ 01. HTML skeleton
 
 First of all, the HTML structure to support the game must be created. The document will consist of different areas:
 
@@ -15,7 +20,7 @@ First of all, the HTML structure to support the game must be created. The docume
 
 Start with a basic container for each row.
 
-=== 2. More HTML elements
+=== 🏠 02. More HTML elements
 
 Now we are going to add new elements:
 
@@ -24,7 +29,7 @@ Now we are going to add new elements:
 
 In this first phase you should not style the document. Simply focus on using the correct HTML elements and apply the appropriate classes and identifiers. You also do not have to create the __cell structure__ for the words in the table. That part will be refined later with other elements and styles.
 
-=== 3. Apply basic CSS styles
+=== 💅🏻 03. Apply basic CSS styles
 
 In the following step simple styles will be applied to make the website more usable and better looking. 
 
@@ -32,7 +37,7 @@ Based on the sketches we will try to centre the content and make it "responsive"
 
 The introduction of custom text fonts and the use of background colors and shading will be an asset.
 
-=== 4. Starting with Javascript
+=== 🎡 04. Starting with Javascript
 
 We are going to add a little dynamic behavior to our game:
 
@@ -41,3 +46,10 @@ We are going to add a little dynamic behavior to our game:
 * Allow the user to enter a word via input and, after pressing a button, issue an alert announcing whether they guessed correctly or not (with an exact word comparison)
 * At this point, all the user's word attempts should be displayed in the lower list
 * Put the current year in the footer near to the author information
+
+=== ... WIP ...
+
+== References
+
+* https://en.wikipedia.org/wiki/Wordle
+* https://nyt.com/games/wordle/index.html
