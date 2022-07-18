@@ -1,1 +1,7 @@
 = 3. Apply basic CSS styles
+
+In the following step simple styles will be applied to make the website more usable and better looking. 
+
+Based on the sketches we will try to centre the content and make it __responsive__ to some extent. Also we are going to style the buttons and the input elements. 
+
+The introduction of custom text fonts and the use of background colors and shading will be an asset.

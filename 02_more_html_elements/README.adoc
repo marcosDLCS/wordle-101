@@ -1,1 +1,8 @@
 = 2. More HTML elements
+
+Now we are going to add new elements:
+
+* Inputs, buttons and forms
+* Lists
+
+In this first phase you should not style the document. Simply focus on using the correct HTML elements and apply the appropriate classes and identifiers. You also do not have to create the __cell structure__ for the words in the table. That part will be refined later with other elements and styles.

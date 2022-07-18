@@ -1,1 +1,12 @@
 = 1. HTML skeleton
+
+First of all, the HTML structure to support the game must be created. The document will consist of different areas:
+
+* Title
+* Explanation of the rules of the game
+* Board where to display the accepted words
+* Action panel
+* List of all attempts (including non-validated ones)
+* Footer
+
+Start with a basic container for each row.
