@@ -128,3 +128,9 @@ footer {
 #how-to-play > ul li {
   font-size: 1.2rem;
 }
+
+#attempts ol > li {
+  font-size: 1.3em;
+  font-family: var(--text-font);
+  font-weight: bolder;
+}

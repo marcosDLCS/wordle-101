@@ -7,3 +7,7 @@ We are going to add a little dynamic behavior to our game:
 * Allow the user to enter a word via input and, after pressing a button, issue an alert announcing whether they guessed correctly or not (with an exact word comparison)
 * At this point, all the user's word attempts should be displayed in the lower list
 * Put the current year in the footer near to the author information
+
+== How to run it?
+
+You can use Visual Studio Code in combination with the https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer[Live Server] extension.
