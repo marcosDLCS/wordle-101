@@ -9,7 +9,7 @@ import { words } from "./words.js";
 /* State */
 /* -------------------------------------------------------------------------------- */
 
-let randomWord = selectRandomWord(words);
+let randomWord = "";
 
 /* Functions */
 /* -------------------------------------------------------------------------------- */
@@ -20,17 +20,24 @@ function selectRandomWord(dictionary) {
   ].toUpperCase();
 }
 
+function start() {
+  randomWord = selectRandomWord(words);
+  console.log("Hint: ", randomWord);
+  document.getElementById("list-of-attempts").innerHTML = "";
+}
+
 function drawFooterYear() {
   document.getElementById("current-year").innerText = new Date().getFullYear();
 }
 
 function play() {
   const userAttempt = document.querySelector("#word-input").value.toUpperCase();
+  validateAttempt();
   document.querySelector("#word-input").value = "";
 
   if (randomWord === userAttempt) {
     alert("Congrats! You win.");
-    reset();
+    start();
   } else {
     alert(`Oh no! ${userAttempt} is not the daily hidden word.`);
     addAttemptToList(userAttempt);
@@ -41,14 +48,8 @@ function play() {
 
 function validateAttempt(attempt) {
   if (attempt === undefined || attempt === "") {
-    alert("The attempt must not be null or empty");
+    console.log("The attempt must not be null or empty");
   }
-}
-
-function reset() {
-  randomWord = selectRandomWord(words);
-  console.log("Hint: ", randomWord);
-  document.getElementById("list-of-attempts").innerHTML = "";
 }
 
 function addAttemptToList(attempt) {
@@ -66,5 +67,5 @@ document.getElementById("play-button").onclick = () => play();
 /* Run */
 /* -------------------------------------------------------------------------------- */
 
+start();
 drawFooterYear();
-console.log("Hint: ", randomWord);
