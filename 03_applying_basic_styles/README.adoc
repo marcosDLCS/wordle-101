@@ -1,4 +1,4 @@
-= 3. Apply basic CSS styles
+= 03. Apply basic CSS styles
 
 In the following step simple styles will be applied to make the website more usable and better looking. 
 

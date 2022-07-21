@@ -1,11 +1,33 @@
 = wordle-101
 :toc: auto
 
+== Introduction
+
 Wordle is a web-based word game created and developed by Welsh software engineer Josh Wardle, and owned and published by The New York Times Company since 2022. 
 
 Players have six attempts to guess a five-letter word, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position.
 
-== The road to a basic Wordle
+== The best way to run the examples
+
+Download Git and Visual Studio Code.
+
+* https://git-scm.com/
+* https://code.visualstudio.com/#alt-downloads
+
+Install Live Server extension in Visual Studio Code.
+
+* https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Clone the project in your computer.
+
+[source, console]
+----
+git clone https://github.com/marcosDLCS/wordle-101.git
+----
+
+With **VSCode**, go to the desired folder and open the file **wordle.html**. Find the "Go Live" button in the right bottom part of the editor interface and press it.
+
+== A road to a basic Wordle
 
 === ☠️ 01. HTML skeleton
 
@@ -47,7 +69,26 @@ We are going to add a little dynamic behavior to our game:
 * At this point, all the user's word attempts should be displayed in the lower list
 * Put the current year in the footer near to the author information
 
-=== ... WIP ...
+=== 👮🏻‍♂️ 05. Saving and validating the data
+
+* Create a data structure to store the data related to the game we are playing. We have to think about how to store the word to hit and the invalid attempts made so far
+
+* Count the number of attempts and don't let more than 6. When the maximum is reached, warn with an __alert__ that you can't play anymore
+ 
+* Validate the user's attempts. Do not allow empty strings, numbers or words that do not have an exact length of 5 positions to be entered. Show custom warnings via __alerts__ when:
+** Text contains numbers
+** Text is less than five characters long
+** The text is longer than five characters
+
+* In spite of the validations, all the user's attempts must still be shown in the lower list
+
+* Create and give functionality to the __Reset game__ button and make the board and word lists on the screen show as they did at the beginning (empty)
+
+* Remove values from internal data structures
+
+=== 🦄 06. Add more complex styles
+
+WIP
 
 == References
 

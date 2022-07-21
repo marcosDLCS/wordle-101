@@ -1,4 +1,4 @@
-= 4. Starting with Javascript
+= 04. Starting with Javascript
 
 We are going to add a little dynamic behavior to our game:
 

@@ -1,0 +1,145 @@
+/* Styles */
+/* -------------------------------------------------------------------------------- */
+
+/*
+Color Palette: https://www.canva.com/colors/color-palettes/window-tide/
+Midnight Blue (#41729F), Blue Gray (#5885AF), Dark Blue (#274472), Baby Blue (#C3E0E5)
+*/
+
+/* Variables */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+
+:root {
+  --midnight-blue: #41729f;
+  --blue-gray: #5885af;
+  --dark-blue: #274472;
+  --baby-blue: #c3e0e5;
+
+  --title-font: "Edu SA Beginner", cursive;
+  --text-font: "Raleway", sans-serif;
+  --fancy-font: "Dancing Script", cursive;
+
+  color: var(--baby-blue);
+  font-family: var(--text-font);
+}
+
+/* Elrements */
+/* -------------------------------------------------------------------------------- */
+
+body {
+  background-color: var(--dark-blue);
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title-font);
+}
+
+section {
+  padding: 1rem;
+}
+
+footer {
+  font-family: var(--fancy-font);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Identifiers */
+/* -------------------------------------------------------------------------------- */
+
+#how-to-play,
+#board,
+#player-actions,
+#summary {
+  margin: 15px;
+  min-height: 150px;
+}
+
+#board {
+  /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 30vh;
+  background-color: var(--midnight-blue);
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+#word-input {
+  border: 0.5rem solid var(--baby-blue);
+  display: block;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 0 auto;
+}
+
+#play-button {
+  background-color: #d1f2c9;
+}
+
+#reset-button {
+  background-color: #eab4d5;
+}
+
+/* Classes */
+/* -------------------------------------------------------------------------------- */
+
+.content {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.board-row {
+  height: 3rem;
+  width: 75%;
+  border: 0.2rem solid white;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0.2rem auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fancy-font);
+  font-weight: 700;
+  color: white;
+}
+
+.my-button {
+  display: block;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 4rem;
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5em auto;
+}
+
+/* Complex selectors */
+/* -------------------------------------------------------------------------------- */
+
+#how-to-play > p,
+#how-to-play > ul li {
+  font-size: 1.2rem;
+}
+
+#attempts ol > li {
+  font-size: 1.3em;
+  font-family: var(--text-font);
+  font-weight: bolder;
+}

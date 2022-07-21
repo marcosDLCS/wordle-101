@@ -1,4 +1,4 @@
-= 1. HTML skeleton
+= 01. HTML skeleton
 
 First of all, the HTML structure to support the game must be created. The document will consist of different areas:
 

@@ -1,4 +1,4 @@
-= 2. More HTML elements
+= 02. More HTML elements
 
 Now we are going to add new elements:
 

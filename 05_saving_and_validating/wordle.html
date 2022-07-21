@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner:wght@500&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wordle 101 [05]</title>
+  </head>
+  <body>
+    <header class="content">
+      <section id="title">
+        <h1>Wordle</h1>
+      </section>
+    </header>
+    <main class="content">
+      <section id="how-to-play">
+        <h2>Instructions</h2>
+        <p>
+          The mechanics of the game are simple: you will have six attempts to
+          guess each day's secret five-letter word. Also, please note the
+          following facts:
+        </p>
+        <ul id="list-of-rules">
+          <li class="rule-item">The words are in English</li>
+          <li class="rule-item">
+            It doesn't matter if you write the words in uppercase, lowercase or
+            with interspersed letters
+          </li>
+          <li class="rule-item">No numbers or punctuation marks are allowed</li>
+          <li>
+            The list of all attempts, including all those considered invalid,
+            will be reflected in a list in the lower area
+          </li>
+        </ul>
+      </section>
+      <section id="board">
+      </section>
+      <section id="player-actions">
+        <form>
+          <input
+            type="text"
+            id="word-input"
+            name="word"
+            placeholder="Your next attempt"
+          />
+          <input
+            type="submit"
+            id="play-button"
+            value="PLAY!"
+            class="my-button"
+          />
+        </form>
+        <button id="reset-button" class="my-button">RESET</button>
+      </section>
+      <section id="summary">
+        <div id="attempts">
+          <h2>Attempts</h2>
+          <ol id="list-of-attempts"></ol>
+        </div>
+      </section>
+    </main>
+    <footer class="content">
+      <section id="author">
+        <p>Marcos de la Calle - <span id="current-year"></span></p>
+      </section>
+    </footer>
+  </body>
+  <script type="module" src="words.js"></script>
+  <script type="module" src="wordle.js"></script>
+</html>
