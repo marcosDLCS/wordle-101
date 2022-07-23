@@ -10,11 +10,17 @@ Midnight Blue (#41729F), Blue Gray (#5885AF), Dark Blue (#274472), Baby Blue (#C
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
 :root {
+  /* Colors */
   --midnight-blue: #41729f;
   --blue-gray: #5885af;
   --dark-blue: #274472;
   --baby-blue: #c3e0e5;
+  --success: #50c878;
+  --error: #ff6e4a;
+  --warn: #fcc200;
+  --lights-on: white;
 
+  /* Fonts */
   --title-font: "Edu SA Beginner", cursive;
   --text-font: "Raleway", sans-serif;
   --fancy-font: "Dancing Script", cursive;
@@ -63,20 +69,23 @@ footer {
 #board,
 #player-actions,
 #summary {
-  margin: 15px;
-  min-height: 150px;
+  margin: 1rem;
+  min-height: 10rem;
 }
 
 #board {
   /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 30vh;
-  background-color: var(--midnight-blue);
-  width: 70%;
-  margin: 0 auto;
-  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem;
+  grid-template-rows: 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem;
+  grid-template-areas:
+    "first first first first first"
+    "second second second second second"
+    "third third third third third"
+    "fourth fourth fourth fourth fourth"
+    "fifth fifth fifth fifth fifth"
+    "sixth sixth sixth sixth sixth";
+  justify-content: center;
 }
 
 #word-input {
@@ -84,17 +93,26 @@ footer {
   display: block;
   width: 20rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 0 0.5rem 0 0.5rem;
   margin: 0 auto;
+  border-radius: 1rem;
 }
 
 #play-button {
-  background-color: #d1f2c9;
+  background-color: var(--success);
+  color: var(--lights-on);
 }
 
 #reset-button {
-  background-color: #eab4d5;
+  background-color: var(--error);
+  color: var(--lights-on);
+}
+
+#attempts {
+  border: 0.2rem dashed var(--lights-on);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 /* Classes */
@@ -103,20 +121,6 @@ footer {
 .content {
   width: 60vw;
   margin: 0 auto;
-}
-
-.board-row {
-  height: 3rem;
-  width: 75%;
-  border: 0.2rem solid white;
-  border-radius: 10px;
-  align-items: center;
-  margin: 0.2rem auto;
-  text-align: center;
-  font-size: 2rem;
-  font-family: var(--fancy-font);
-  font-weight: 700;
-  color: white;
 }
 
 .my-button {
@@ -128,6 +132,25 @@ footer {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0.5em auto;
+}
+
+.grid-item {
+  border: 0.15rem solid white;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--title-font);
+  font-weight: 700;
+  color: white;
+}
+
+.wrong-item {
+  background-color: var(--error);
+}
+
+.correct-item {
+  background-color: var(--success);
 }
 
 /* Complex selectors */
@@ -142,4 +165,9 @@ footer {
   font-size: 1.3em;
   font-family: var(--text-font);
   font-weight: bolder;
+}
+
+#attempts > h2 {
+  margin: 0.5rem;
+  text-decoration: underline;
 }

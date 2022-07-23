@@ -1,6 +1,9 @@
 = 06. Add more complex styles
 
-WIP
+* Create a 5x6 board to put the letters of each validated word separately
+* Color the rows of incorrect words a reddish color
+* If correct, use a green color to color the row
+* Find a suitable color palette
 
 == How to run it?
 

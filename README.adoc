@@ -72,21 +72,27 @@ We are going to add a little dynamic behavior to our game:
 === 👮🏻‍♂️ 05. Saving and validating the data
 
 * Create a data structure to store the data related to the game we are playing. We have to think about how to store the word to hit and the invalid attempts made so far
-
 * Count the number of attempts and don't let more than 6. When the maximum is reached, warn with an __alert__ that you can't play anymore
- 
 * Validate the user's attempts. Do not allow empty strings, numbers or words that do not have an exact length of 5 positions to be entered. Show custom warnings via __alerts__ when:
 ** Text contains numbers
 ** Text is less than five characters long
 ** The text is longer than five characters
-
 * In spite of the validations, all the user's attempts must still be shown in the lower list
-
 * Create and give functionality to the __Reset game__ button and make the board and word lists on the screen show as they did at the beginning (empty)
-
 * Remove values from internal data structures
 
 === 🦄 06. Add more complex styles
+
+* Create a 5x6 board to put the letters of each validated word separately
+* Color the rows of incorrect words a reddish color
+* If correct, use a green color to color the row
+* Find a suitable color palette
+
+=== 🕰 07. Play it later
+
+WIP
+
+=== 🎨 08. Colored letters
 
 WIP
 
