@@ -1,6 +1,8 @@
 = 07. Play it later
 
-WIP
+Now it is time to save the state of our game and allow us to resume the game where we left off even if we reload the browser.
+
+To do this we will use LocalStorage.
 
 == How to run it?
 

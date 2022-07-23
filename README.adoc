@@ -69,7 +69,7 @@ We are going to add a little dynamic behavior to our game:
 * At this point, all the user's word attempts should be displayed in the lower list
 * Put the current year in the footer near to the author information
 
-=== 👮🏻‍♂️ 05. Saving and validating the data
+=== 👮🏻‍♂️ 05. Storing and validating the data
 
 * Create a data structure to store the data related to the game we are playing. We have to think about how to store the word to hit and the invalid attempts made so far
 * Count the number of attempts and don't let more than 6. When the maximum is reached, warn with an __alert__ that you can't play anymore
@@ -90,9 +90,15 @@ We are going to add a little dynamic behavior to our game:
 
 === 🕰 07. Play it later
 
-WIP
+Now it is time to save the state of our game and allow us to resume the game where we left off even if we reload the browser.
+
+To do this we will use LocalStorage.
 
 === 🎨 08. Colored letters
+
+WIP
+
+=== 📐 09. Refine and refactor
 
 WIP
 

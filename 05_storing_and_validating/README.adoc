@@ -1,4 +1,4 @@
-= 05. Saving and validating the data
+= 05. Storing and validating the data
 
 * Create a data structure to store the data related to the game we are playing. We have to think about how to store the word to hit and the invalid attempts made so far
 * Count the number of attempts and don't let more than 6. When the maximum is reached, warn with an __alert__ that you can't play anymore
