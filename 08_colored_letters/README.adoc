@@ -1,6 +1,10 @@
 = 08. Colored letters
 
-WIP
+In this section we will add some more behavior:
+
+* If the letter of the word entered is not in the word we are looking for, we color it red
+* If the letter is in the word, but not in the correct position, we color it yellow
+* If the letter is in the correct position, we color it green
 
 == How to run it?
 
