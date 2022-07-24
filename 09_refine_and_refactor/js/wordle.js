@@ -105,7 +105,7 @@ function reset() {
 }
 
 function play() {
-  // Prevent the "submit" default behavior
+  // Prevent the "submit" event default behavior
   event.preventDefault();
 
   const userAttempt = document.querySelector("#word-input").value.toUpperCase();
@@ -131,18 +131,19 @@ function play() {
     game.lastNotification = Messages.Success.Winner;
     game.status = GameStatus.Win;
   } else {
-    game.lastNotification = Messages.Error.NotTheWord;
+    // Check the defeat
+    if (game.validAttempts.length === MAX_ATTEMPTS) {
+      game.lastNotification = Messages.Error.Looser;
+      game.status = GameStatus.Defeat;
+    } else {
+      game.lastNotification = Messages.Error.NotTheWord;
+    }
   }
 
-  // Check the victory
-  if (game.validAttempts.length > MAX_ATTEMPTS - 1) {
-    game.lastNotification = Messages.Error.Looser;
-    game.status = GameStatus.Defeat;
-  }
-
-  // Clear user input and re-draw the board
+  // Clear user input
   document.querySelector("#word-input").value = "";
 
+  // Re-draw
   drawNotifications();
   drawValidAttempts();
   saveGameStatus();
