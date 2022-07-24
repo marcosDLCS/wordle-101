@@ -104,6 +104,23 @@ In this section we will add some more behavior:
 
 === 📐 09. Refine and refactor
 
+In this section we will try to improve certain aspects of our game that are not so good at the moment.
+
+In the functional section:
+
+* We will only allow words to be entered as letters from A to Z, without punctuation marks
+* Only the first occurrence of a letter in the word that is not in its position will be marked yellow
+* We will move alert warnings to a notification section at the top of the game board so as not to detract from the user experience
+
+Refactoring:
+
+* We will group the various functions in the code and give better variable names
+* We will add useful comments that explain the flow of the game
+* We will group the notification messages in a structure that makes them more usable
+* We will create the board elements dynamically
+
+=== 🎬 10. Animations and responsive
+
 WIP
 
 == References

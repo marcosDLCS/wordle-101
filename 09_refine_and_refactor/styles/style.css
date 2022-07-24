@@ -1,0 +1,190 @@
+/* Styles */
+/* -------------------------------------------------------------------------------- */
+
+/*
+Color Palette: https://www.canva.com/colors/color-palettes/window-tide/
+Midnight Blue (#41729F), Blue Gray (#5885AF), Dark Blue (#274472), Baby Blue (#C3E0E5)
+*/
+
+/* Variables */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+
+:root {
+  /* Colors */
+  --midnight-blue: #41729f;
+  --blue-gray: #5885af;
+  --dark-blue: #274472;
+  --baby-blue: #c3e0e5;
+
+  --correct: #50c878;
+  --wrong: #c0c0c0;
+  --warn: #fcc200;
+
+  --lights-on: white;
+  --lights-off: #353839;
+
+  /* Fonts */
+  --title-font: "Edu SA Beginner", cursive;
+  --text-font: "Raleway", sans-serif;
+  --fancy-font: "Dancing Script", cursive;
+
+  color: var(--baby-blue);
+  font-family: var(--text-font);
+}
+
+/* Elements */
+/* -------------------------------------------------------------------------------- */
+
+body {
+  background-color: var(--dark-blue);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title-font);
+}
+
+section {
+  padding: 1rem;
+}
+
+footer {
+  font-family: var(--fancy-font);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Identifiers */
+/* -------------------------------------------------------------------------------- */
+
+#how-to-play,
+#board,
+#player-actions,
+#summary {
+  margin: 0.7rem;
+  min-height: 10rem;
+}
+
+#notifications {
+  background-color: var(--midnight-blue);
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#board {
+  /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  display: grid;
+  grid-template-columns: 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem;
+  grid-template-rows: 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem;
+  grid-template-areas:
+    "first first first first first"
+    "second second second second second"
+    "third third third third third"
+    "fourth fourth fourth fourth fourth"
+    "fifth fifth fifth fifth fifth"
+    "sixth sixth sixth sixth sixth";
+  justify-content: center;
+}
+
+#word-input {
+  border: 0.5rem solid var(--baby-blue);
+  display: block;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+#play-button {
+  background-color: var(--correct);
+  color: var(--lights-on);
+}
+
+#reset-button {
+  background-color: var(--blue-gray);
+  color: var(--lights-on);
+}
+
+#attempts {
+  border: 0.2rem dashed var(--lights-on);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* Classes */
+/* -------------------------------------------------------------------------------- */
+
+.content {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.my-button {
+  display: block;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 4rem;
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5em auto;
+}
+
+.grid-item {
+  border: 0.15rem solid var(--lights-on);
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--title-font);
+  font-weight: 700;
+  color: var(--lights-on);
+  text-shadow: 0.2rem 0.2rem var(--dark-blue);
+}
+
+.wrong-item {
+  background-color: var(--wrong);
+}
+
+.warn-item {
+  background-color: var(--warn);
+}
+
+.correct-item {
+  background-color: var(--correct);
+}
+
+/* Complex selectors */
+/* -------------------------------------------------------------------------------- */
+
+#how-to-play > p,
+#how-to-play > ul li {
+  font-size: 1rem;
+}
+
+#notifications p {
+  margin: 0.75em;
+}
+
+#attempts ol > li {
+  font-size: 1.3em;
+  font-family: var(--text-font);
+  font-weight: bolder;
+}
