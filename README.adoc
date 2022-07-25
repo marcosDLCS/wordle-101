@@ -3,9 +3,9 @@
 
 == Introduction
 
-Wordle is a web-based word game created and developed by Welsh software engineer Josh Wardle, and owned and published by The New York Times Company since 2022. 
+Wordle is a web-based word game **created and developed by Welsh software engineer Josh Wardle**, and owned and published by The New York Times Company since 2022. 
 
-Players have six attempts to guess a five-letter word, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position.
+Players have **six attempts to guess a five-letter word**, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position.
 
 == The best way to run the examples
 
@@ -28,6 +28,14 @@ git clone https://github.com/marcosDLCS/wordle-101.git
 With **VSCode**, go to the desired folder and open the file **wordle.html**. Find the "Go Live" button in the right bottom part of the editor interface and press it.
 
 == A road to a basic Wordle
+
+On our way to programming a Wordle-like game, we will start with a version with a **very basic structure** and, step by step, we will add styles and functionality to **make the game look like its twin** in a convincing manner:
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::resources/img/step_1.png[Step 1,250,100]
+| image::resources/img/step_9.png[Step 9,250,100]
+|===
 
 === ☠️ 01. HTML skeleton
 
