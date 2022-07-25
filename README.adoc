@@ -37,6 +37,8 @@ On our way to programming a Wordle-like game, we will start with a version with 
 | image::resources/img/step_9.png[Step 9,250]
 |===
 
+---
+
 === ☠️ 01. HTML skeleton
 
 First of all, the HTML structure to support the game must be created. The document will consist of different areas:
@@ -50,6 +52,8 @@ First of all, the HTML structure to support the game must be created. The docume
 
 Start with a basic container for each row.
 
+---
+
 === 🏠 02. More HTML elements
 
 Now we are going to add new elements:
@@ -59,6 +63,8 @@ Now we are going to add new elements:
 
 In this first phase you should not style the document. Simply focus on using the correct HTML elements and apply the appropriate classes and identifiers. You also do not have to create the __cell structure__ for the words in the table. That part will be refined later with other elements and styles.
 
+---
+
 === 💅🏻 03. Apply basic CSS styles
 
 In the following step simple styles will be applied to make the website more usable and better looking. 
@@ -66,6 +72,8 @@ In the following step simple styles will be applied to make the website more usa
 Based on the sketches we will try to centre the content and make it "responsive" to some extent. Also we are going to style the buttons and the input elements. 
 
 The introduction of custom text fonts and the use of background colors and shading will be an asset.
+
+---
 
 === 🎡 04. Starting with Javascript
 
@@ -76,6 +84,8 @@ We are going to add a little dynamic behavior to our game:
 * Allow the user to enter a word via input and, after pressing a button, issue an alert announcing whether they guessed correctly or not (with an exact word comparison)
 * At this point, all the user's word attempts should be displayed in the lower list
 * Put the current year in the footer near to the author information
+
+---
 
 === 👮🏻‍♂️ 05. Storing and validating the data
 
@@ -89,6 +99,8 @@ We are going to add a little dynamic behavior to our game:
 * Create and give functionality to the __Reset game__ button and make the board and word lists on the screen show as they did at the beginning (empty)
 * Remove values from internal data structures
 
+---
+
 === 🦄 06. Add more complex styles
 
 * Create a 5x6 board to put the letters of each validated word separately
@@ -96,11 +108,15 @@ We are going to add a little dynamic behavior to our game:
 * If correct, use a green color to color the row
 * Find a suitable color palette
 
+---
+
 === 🕰 07. Play it later
 
 Now it is time to save the state of our game and allow us to resume the game where we left off even if we reload the browser.
 
 To do this we will use LocalStorage.
+
+---
 
 === 🎨 08. Colored letters
 
@@ -109,6 +125,8 @@ In this section we will add some more behavior:
 * If the letter of the word entered is not in the word we are looking for, we color it gray
 * If the letter is in the word, but not in the correct position, we color it yellow
 * If the letter is in the correct position, we color it green
+
+---
 
 === 📐 09. Refine and refactor
 
@@ -127,9 +145,12 @@ Refactoring:
 * We will group the notification messages in a structure that makes them more usable
 * We will create the board elements dynamically
 
+---
+
 === 🎬 10. Animations and responsive
 
 WIP
+
 
 == References
 
