@@ -33,8 +33,8 @@ On our way to programming a Wordle-like game, we will start with a version with 
 
 [cols=">a,<a", frame=none, grid=none]
 |===
-| image::resources/img/step_1.png[Step 1,250,100]
-| image::resources/img/step_9.png[Step 9,250,100]
+| image::resources/img/step_1.png[Step 1,250]
+| image::resources/img/step_9.png[Step 9,250]
 |===
 
 === ☠️ 01. HTML skeleton
