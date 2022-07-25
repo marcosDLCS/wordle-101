@@ -31,7 +31,7 @@ With **VSCode**, go to the desired folder and open the file **wordle.html**. Fin
 
 On our way to programming a Wordle-like game, we will start with a version with a **very basic structure** and, step by step, we will add styles and functionality to **make the game look like its twin** in a convincing manner:
 
-[cols=">a,<a", frame=none, grid=none]
+[cols=">a,<a", frame=none, grid=none, align=center]
 |===
 | image::resources/img/step_1.png[Step 1,250]
 | image::resources/img/step_9.png[Step 9,250]
