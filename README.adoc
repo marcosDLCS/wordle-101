@@ -1,6 +1,12 @@
 = wordle-101
 :toc: auto
 
+== TeachTech
+
+This simple project has been created as an example during **TeachTech 2022** to illustrate concepts during mentoring assignments.
+
+https://www.teacht3ch.com/[TeachTech] is a non-profit initiative, composed solely of volunteer IT professionals, whose goal is to teach the basics of programming to people with no previous knowledge, free of charge.
+
 == Introduction
 
 Wordle is a web-based word game **created and developed by Welsh software engineer Josh Wardle**, and owned and published by The New York Times Company since 2022. 
@@ -144,13 +150,6 @@ Refactoring:
 * We will add useful comments that explain the flow of the game
 * We will group the notification messages in a structure that makes them more usable
 * We will create the board elements dynamically
-
----
-
-=== 🎬 10. Animations and responsive
-
-WIP
-
 
 == References
 
